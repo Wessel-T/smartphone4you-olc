@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
     }
 
     if(count($errors) === 0){
-        $db = new PDO("mysql:host=localhost;dbname=phone4you_olc","root", "");
+        $db = new PDO("mysql:host=localhost;dbname=phoneforyou","root", "");
 
         $query = $db->prepare("INSERT INTO vendor (name, description, image) VALUES (:name, :description, :image);  ");
         $query->bindParam(':name', $inputs['name']);

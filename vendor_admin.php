@@ -1,6 +1,6 @@
 <?php
 
-$db = new PDO("mysql:host=localhost;dbname=phone4you_olc","root", "");
+$db = new PDO("mysql:host=localhost;dbname=phoneforyou","root", "");
 
 $query = $db->prepare("SELECT * FROM vendor ");
 $query->execute();

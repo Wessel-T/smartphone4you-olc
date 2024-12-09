@@ -5,7 +5,7 @@ $errors = [];
 
 $id = $_GET['id'];
 
-$db = new PDO("mysql:host=localhost;dbname=phone4you_olc","root", "");
+$db = new PDO("mysql:host=localhost;dbname=phoneforyou","root", "");
 $request_method = strtoupper($_SERVER['REQUEST_METHOD']);
 if ($request_method === 'GET') {
 

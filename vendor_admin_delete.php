@@ -1,7 +1,7 @@
 <?php
 
 $request_method = strtoupper($_SERVER['REQUEST_METHOD']);
-$db = new PDO("mysql:host=localhost;dbname=phone4you_olc", "root", "");
+$db = new PDO("mysql:host=localhost;dbname=phoneforyou", "root", "");
 
 if ($request_method === 'GET') {
 
